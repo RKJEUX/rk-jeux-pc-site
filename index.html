@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK JEUX PC - Tous mes liens</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%); 
+            color: #fff; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center; 
+            margin-bottom: 40px; 
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        .logo {
+            width: clamp(120px, 25vw, 200px); 
+            height: auto; 
+            margin-bottom: 15px; 
+            filter: drop-shadow(0 0 20px rgba(0,255,136,0.6));
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .logo:hover { 
+            filter: drop-shadow(0 0 30px rgba(0,255,136,0.9));
+            transform: scale(1.05);
+        }
+        h1 { 
+            font-size: clamp(1.8em, 4vw, 3em); 
+            background: linear-gradient(45deg, #00ff88, #00bfff, #ff00ff); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            text-shadow: 0 0 30px rgba(0,255,136,0.5);
+            margin-bottom: 10px;
+        }
+        .slogan { 
+            font-size: 1.2em; 
+            color: #aaa; 
+            text-transform: uppercase; 
+            letter-spacing: 3px;
+        }
+        .links-container {
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+            max-width: 400px; 
+            width: 100%;
+        }
+        .lien { 
+            display: flex; 
+            align-items: center; 
+            padding: 18px 25px; 
+            background: rgba(255,255,255,0.1); 
+            backdrop-filter: blur(10px); 
+            border: 2px solid rgba(0,255,136,0.3); 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 15px; 
+            font-size: 1.1em; 
+            font-weight: bold; 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .lien::before {
+            content: ''; 
+            position: absolute; 
+            top: 0; left: -100%; 
+            width: 100%; height: 100%; 
+            background: linear-gradient(90deg, transparent, rgba(0,255,136,0.3), transparent); 
+            transition: left 0.5s;
+        }
+        .lien:hover::before { left: 100%; }
+        .lien:hover { 
+            border-color: #00ff88; 
+            background: rgba(0,255,136,0.2); 
+            transform: translateY(-5px) scale(1.02); 
+            box-shadow: 0 20px 40px rgba(0,255,136,0.3);
+        }
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px #00ff88); }
+            to { filter: drop-shadow(0 0 30px #00ff88); }
+        }
+        @media (max-width: 480px) { 
+            .links-container { gap: 15px; }
+            .lien { padding: 15px 20px; font-size: 1em; }
+            .logo { width: 120px !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="851194AE-CD1D-49BA-A305-32BDA514642A.jpeg" class="logo">
+        <h1>RK JEUX PC </h1>
+        <div class="slogan">Vos Jeux PC à partir de 15.000fc. (Kinshasa)</div>
+        <div class="slogan">installation à distance possible partout au congo</div>
+       <div class="slogan">contactez nous ici 👇</div>
+    </div>
+    
+    <div class="links-container">
+        <a href="https://wa.me/message/QO22CKM3OXX4G1" class="lien" target="_blank">
+            <span style="color:#25D366;">📱</span> WhatsApp privé
+        </a>
+        <a href="https://t.me/rk_jeux_pc" class="lien" target="_blank">
+            <span style="color:#0088cc;">💬</span> Telegram 
+        </a>
+        <a href="https://whatsapp.com/channel/0029Vb6MpblEAKWIEb1pDw2z" class="lien" target="_blank">
+            <span style="color:#25D366;">🔗</span> Chaîne WhatsApp
+        </a>
+        <a href="https://www.tiktok.com/@rkjeuxpc" class="lien" target="_blank">
+            <span style="color:#ff0050;">🎥</span> TikTok Vidéos
+        </a>
+        <a href="https://www.tiktok.com/@rk_jeux_pc?_r=1&_t=ZN-91ygaYyLNzS" class="lien" target="_blank">
+        </a>
+    </div>
+</body>
+</html>
+
